@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"id": "score_counter",
+	"version": "${mod_version}",
+
+	"name": "Score Counter",
+	"description": "Adds the Score counter from Indev to modern versions of Minecraft",
+	"authors": [ "Sindercube" ],
+	"contact": {
+		"homepage": "https://discord.sindercu.be",
+		"sources": "https://github.com/Sindercube/Score-Counter"
+	},
+	"license": "LGPL-3.0-only",
+
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.sindercube.scoreCounter.fabric.ScoreCounterFabric"
+		]
+	},
+	"mixins": [ "score_counter.mixins.json" ]
+}
