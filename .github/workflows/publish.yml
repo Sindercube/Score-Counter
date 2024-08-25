@@ -41,7 +41,7 @@ jobs:
           github-tag: "${{ github.event.release.tag_name }}"
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
-          name: "Score Counter v${{ github.event.release.tag_name }}"
+          name: "Score Counter v${{ github.event.release.tag_name }} Fabric"
           version: "${{ github.event.release.tag_name }}"
           version-type: "${{ env.RELEASE_TYPE }}"
           changelog: "${{ github.event.release.body }}"
@@ -70,7 +70,7 @@ jobs:
           github-tag: "${{ github.event.release.tag_name }}"
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
-          name: "Score Counter v${{ github.event.release.tag_name }}"
+          name: "Score Counter v${{ github.event.release.tag_name }} Forge"
           version: "${{ github.event.release.tag_name }}"
           version-type: "${{ env.RELEASE_TYPE }}"
           changelog: "${{ github.event.release.body }}"
