@@ -55,3 +55,7 @@ jobs:
 
           game-versions: |
             1.20.1
+
+          files: |
+            fabric/build/libs/!(*-@(dev|sources|javadoc|shadow)).jar
+            forge/build/libs/!(*-@(dev|sources|javadoc|shadow)).jar
